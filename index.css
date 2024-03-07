@@ -1,0 +1,129 @@
+body {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+.container {
+    position: relative;
+    display: flex;
+}
+.div1 {
+    display: inline-block;
+    position: fixed;
+    width: 34%;
+    overflow: hidden; /* Chặn hình ảnh vượt ra khỏi khung div */
+    background-color: lightblue;
+}
+.div1 #Avatar {
+    width: 70%;
+    margin-top: 5%;
+    margin-left: auto; /* Sử dụng auto để căn giữa theo chiều ngang */
+    margin-right: auto; /* Sử dụng auto để căn giữa theo chiều ngang */
+    margin-bottom: 30px;
+    height: auto;
+    border-radius: 50%; /* Tạo khung hình tròn */
+    display: block; /* Đảm bảo hình ảnh nằm giữa div */
+}
+.div1 h1, .div1 h2{
+    padding: 10px;
+    font-size: medium;
+
+}
+.div1 #MyName{
+    text-align: center;
+    font-size: larger;
+}
+.div1 ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Căn giữa nội dung trong khung */
+}
+.div1 ul li {
+    display: inline-block;
+    margin: 0 30px; /* Cách đều nhau giữa các mục danh sách */
+    
+}
+.div1 ul li a {
+    display: inline-block; /* Để có thể áp dụng transform */
+    overflow: hidden; /* Loại bỏ viền của hình ảnh khi phóng to */
+    transition: transform 0.3s; /* Hiệu ứng chuyển đổi scale trong 0.3 giây */
+}
+
+.div1 ul li a:hover img {
+    transform: scale(1.1); /* Phóng to hình ảnh khi hover */
+}
+
+
+.div2 {
+    margin-left: 27%; /* Khoảng cách để tránh chồng lên nhau */
+    width: 100%;
+    height: 1000px;
+    
+}
+.div2 .sub_div2{
+    margin-top: 10px;
+    border-top: 2px solid gray; /* Border trên dày 2px màu xám */
+    
+}
+.div2 .sub_div2 h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.github-button {
+    display: inline-block;
+    background-color: #134f05;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.github-button:hover {
+    background-color: #15e531;
+}
+
+
+.project img {
+    width: 90%;
+    height: auto; /* Đảm bảo tỷ lệ hình ảnh không bị biến dạng */
+}
+
+
+
+.project p{
+    padding-left: 30px;
+}
+
+.div_1 {
+    width: 15%;
+    height: 100%;
+}
+@media only screen and (max-width: 800px) {
+    .container {
+        display: grid;
+    }
+    .div1 {
+        position: relative;
+        margin-left: 0%;
+        width: 100%;
+    }
+    .div2 {
+        position: relative;
+        margin-left: 0%;
+        width: 100%;
+    }
+    .div_1 {
+        position: relative;
+        width: 0%;
+    }
+    .div1 h1, .div1 h2{
+        padding: 10px;
+        font-size: medium;
+    }
+}

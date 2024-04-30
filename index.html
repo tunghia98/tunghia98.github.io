@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lung Cancer</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="div_1"></div>
+        <div class="div1">
+            <h1 id="MyName">Lung Cancer</h1>
+            <!-- Thêm hình ảnh vào div1 -->
+            <img id="Avatar" src="img/index.png" alt="Ảnh" />
+            <h1 id="MyName">Danh sách thành viên</h1>
+            <h2>Nguyễn Tư Nghĩa -3121560060</h2>
+            <h2>Nguyễn Quốc Anh - 3121560010</h2>
+            <h2>Email: tunghia98@gmail.com</h2>
+        </div>
+        <div class="div2">
+            <div class="sub_div2">
+                <h1>SUMMARY</h1>
+                <ul>
+                    <li>Một ứng dụng chẩn đoán hình ảnh CT phổi bằng trí tuệ nhân tạo. Ứng dụng sẽ sử dụng một mô hình
+                        deep learning để dự đoán loại bệnh từ hình ảnh CT phổi, giúp giảm thời gian và công sức của các
+                        chuyên gia y tế trong quá trình chẩn đoán.</li>
+                </ul>
+            </div>
+            <div class="sub_div2">
+                <h1>Hướng dẫn sử dụng</h1>
+                <h2>Chọn ảnh CT cần chẩn đoán</h2>
+                <h2>Nhấn nút chẩn đoán</h2>
+                <h2>Xem thông tin chẩn đoán</h2>
+            </div>
+            <div class="sub_div2">
+                <h1>Yêu cầu</h1>
+                <h2>torch:</h2>
+                <h2>timm:</h2>
+                <h2>fastapi:</h2>
+                <h2>uvicorn[standard]:</h2>
+                <h2>scikit-learn:</h2>
+                <h2>python-multipart:</h2>
+            </div>
+            <div class="sub_div2">
+                <h1>Cài đặt</h1>
+                <h2>Tải bản zip hoặc tạo bản sao để bắt đầu làm việc với dự án</h2>
+                <p><code>git clone https://github.com/tunghia98/Lung_Cancer.git</code></p>
+                <h2>Tải Dataset</h2>
+                <p>Please download the dataset from the following link: the dataset from this <a
+                        href="https://www.kaggle.com/datasets/antonixx/the-iqothnccd-lung-cancer-dataset/data">Lung
+                        Cancer Dataset</a>, and put it into <code>dataset</code> folder by this structure
+                    <code>dataset</code>
+                    <code>├───Bengin cases</code>        
+                    <code>├───Malignant cases</code>        
+                    <code>├───Normal cases</code>        
+                    <code>└───split_info.json</code>
+                </p>
+                <h2>Trỏ đường dẫn tới thư mục:</h2>
+                <p><code>cd Detect_Lung_cancer</code></p>
+                <h2>Tạo và cài đặt môi trường python3</h2>
+                <p><code>python3 -m venv env source venv/bin/activate</code></p>
+                <h2>Cài đặt thư viện</h2>
+                <p><code>pip install -r requirements.txt</code></p>
+                <h2>Model Training</h2>
+                <p><code>python train.py</code></p>
+                <h2>Model Evaluation</h2>
+                <p><code>python evaluate.py</code></p>
+                <h2>FastAPI</h2>
+                <p><code>python -m uvicorn app:app --reload</code></p>
+                <h2>Run Web</h2>
+                <p><code>start index.html</code></p>
+            </div>
+            <div class="sub_div2">
+                <h1>Chú ý</h1>
+            </div>
+            <div class="sub_div2">
+                <h1>Tác giả</h1>
+                <ul>
+                    <li><strong>Tư Nghĩa</strong>: (https://tunghia98.github.io/CV.html)</li>
+                    <li><strong>Quốc Anh</strong>: ()</li>
+                </ul>
+            </div>
+            <div class="sub_div2">
+                <h1>Giấy phép</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
